@@ -1,0 +1,56 @@
+#login {
+    display:none;
+}
+
+body {
+    background-color: rgb(30,34,38);
+    color:whitesmoke;
+}
+
+a {   
+    color:whitesmoke;
+    text-decoration: none;
+    transition: all 200ms;
+}
+
+a:hover {
+    color:lightskyblue;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu {
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-gap: 9px;
+    height: 600px;
+    width: 600px;
+}
+
+.menu-item {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    border: 1px solid black;
+    background-color: rgb(130,134,138);
+    transition: all 200ms;
+}
+
+.menu-item:hover {
+    background-color: rgb(60,64,68);
+    cursor: pointer;
+}
+
+.menu-item>h2 {
+    display: block;
+}
+
+.menu-item>div {
+    display: block;
+}
